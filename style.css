@@ -1,0 +1,1055 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62%;
+}
+/*Navigation*/
+.gw-header{
+    width: 100%;
+    background: #042962;
+}
+.gw-cont{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.gw-logo{
+    font-size: 4rem;
+    color: burlywood;
+    font-weight: 400;
+}
+.gw-nav{
+    list-style: none;
+    display: flex;
+    padding: 1 rem;
+    gap: 2rem;
+}
+.gw-nav li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 200;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    padding: 7px 10px;
+}
+.gw-nav li a:hover{
+    color: cyan;
+}
+.gw-nav li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color:whitesmoke ;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s ease;
+}
+.gw-nav li a:hover::after{
+    width: 100%;
+}
+.nav-toggle{
+    display: none;
+}
+a.active{
+    background:#046d84;
+}
+/*signup*/
+.signin h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #0088dd;
+    display: flex;
+    flex-direction: column;
+    background: #0fffff;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.regcont{
+    max-width:430px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    border-radius: 0.5%;
+
+}
+.form-wrap h1{
+    font-size: 5rem;
+}
+.form-wrap h1,
+.form-wrap p{
+    text-align: center;
+}
+.form-wrap{
+    padding: 15px;
+}
+.form-wrap .form-g{
+    margin-top: 15px;
+}
+.form-wrap .form-g label{
+    display: block;
+    font-size: 2rem;
+}
+.form-wrap .form-g input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.form-wrap button{
+    width: 100%;
+    margin: 10px;
+    padding: 1rem;
+    background-color:#49c1a2;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid #49c1a2;
+    transition: 1s;
+    border-radius: 5px;
+    display: block;
+    font-size: 2rem;
+}
+.form-wrap button:hover{
+    background-color: blue;
+    transition: 1s;
+}
+.terms, .here{
+    text-decoration: none;
+}
+.sfooter .terms{
+    text-decoration: none;
+}
+.sfooter p,
+.form-wrap p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+/*signin*/
+.form-g button{
+    margin-left: auto;
+}
+.sigcont{
+    max-width:430px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    border-radius: 0.5%;
+}
+.errormsg{
+    color: red;
+    font-size: 1.5rem;
+}
+
+/*search*/
+.results{
+    background: #0088dd;
+    width: 100%;
+    color: aliceblue;
+    font-size: 5rem;
+}
+/*pages of interest*/
+.pagesright{
+    padding: 3rem;
+}
+.pagesleft{
+    padding: 3rem;
+}
+.firstpage{
+    background-color: #f0f1f8;
+    border-radius: 5px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    height: 20rem;
+
+}
+.infoheader h1{
+    text-transform: capitalize;
+    font-size: 5rem;
+    color: #0088dd;
+    font-weight: 500;
+    text-align: center;
+}
+.firstpage h2{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.firstpage p{
+    font-size: 2rem;
+}
+.firstpage a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.secondpage{
+    background-color: blueviolet;
+}
+.pagescontainer{
+    display: flex;
+    padding: 3rem;
+}
+.pagesleft{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.pagesright{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+/*features*/
+
+.row {
+    text-align: center;
+    padding: 2em 1em;
+  }
+  .column {
+    
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  .card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    background-color: #ffffff;
+    width: 70rem;
+    height: 40rem;
+    display: inline-block;
+  }
+  .card .img-container {
+    width: 40em;
+    height: 24em;
+    margin: 0 auto 2em auto;
+  }
+  .card img {
+    width: 40em;
+    height: 24em;
+  }
+  .card h3 {
+    font-weight: 500;
+  }
+  .card p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+
+
+
+/*index*/
+
+
+.slideshow{
+    padding-left: 0.5rem;
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+  }
+  .slideshow .images{
+    height: 100%;
+    width: 100%;
+  }
+  .images img{
+    height: 100%;
+    width: 100%;
+  }
+  .content-top{
+    display: flex;
+  }
+  .topleft{
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  .topleft h1{
+    color: #046d84;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 3rem;
+    text-align: center;
+  }
+  .topright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-bar{
+    
+    display: flex;
+    border-radius: 50px;
+    padding-top: 1rem;
+  }
+  .search-bar input{
+    flex-grow: 1;
+    font-size: 2rem;
+    padding:0 0.5rem ;
+    border-radius: 50px;
+    background: transparent;
+  }
+.search_submit{
+    font-size: 1.5 rem;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    width: 4rem;
+    height: 4rem;
+  }
+  .maincont{
+    display: flex;
+  }
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+.left{
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  .text{
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    text-align: center;
+  }
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 80%;
+  }
+  .right h2{
+    font-size: 4rem;
+    color: #042962;
+    text-align: center;
+    padding-right: 3rem;
+  }
+  .submain{
+    display: flex;
+  }
+  .map{
+    width: 100%;
+    height: 50rem;
+  }
+  /*side sec*/
+  .wearables{
+    padding: 2rem;
+  }
+.wear{
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: row;
+    background: #f0f1f8;
+}
+.img-wear img{
+    width: 9rem;
+    height:9rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+  }
+.imgtext-wear{
+    padding: 1rem;
+  }
+.imgtext-wear h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.imgtext-wear p{
+    font-size: 1.5rem;
+}
+/*trms*/
+.termsbody{
+    background: #f0f1f8;
+    padding: 5rem;
+    text-align: center;
+}
+.return{
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+  /*attractions*/
+#localtitle h1{
+    font-size: 5rem;
+    font-weight: 400;
+    color: #0088dd;
+    text-align: center;
+    text-transform: capitalize;
+}
+#attr{
+    display: flex;
+    padding: 3rem;
+    
+}
+.alb{
+    width: 30rem;
+    height: 15rem;
+}
+.imgtext h3{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.imgtext p{
+    font-size: 2rem;
+}
+.imgtext{
+    padding-left: 2rem;
+}
+/*pitches and availability*/
+.zasearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pitchesmain{
+    display: flex;
+    flex-direction: column;
+}
+#pitches{
+    display: flex;
+    padding: 3rem;
+}
+.search-bar_pitches input{
+    border: none;
+    background: #9ecde9;
+    width: 30rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: #046d84;
+    
+}
+.search-bar_pitches{
+    padding: 0 3rem;
+    padding-top: 2rem;
+    
+}
+.pithessearch{
+    display:flex;
+    float: right;
+}
+/*contact us*/
+.privacy{
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.header h1{
+    text-transform: capitalize;
+    font-size: 4rem;
+    color: #0088dd;
+    text-align: center;
+}
+.contactleft{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 40%;
+    margin-top: 3rem;
+    border-color: #0088dd;
+}
+.contactleft i{
+    font-size: 3rem;
+}
+.contactleft h3{
+    font-size: 2rem;
+    font-weight: 100;
+    padding-top: 3rem;
+    color: rgba(26, 24, 24, 0.4)
+
+}
+.address{
+    margin-left: 50%;
+    margin-top: 30%;
+}
+.phone{
+    margin-top: 30%;
+}
+.contactright{
+    
+    flex-grow: 1;
+    flex-basis: 60%;
+}
+.contactcontainer{
+    display: flex;
+    height: 80vh;
+    padding: 0 2rem;
+}
+.addressarea{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+.messagearea{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+.messagearea textarea{
+    height: 18rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    border: none;
+    background: #f0f1f8;
+    resize: none;
+}
+.messagearea label{
+    font-size: 3rem;
+    color: rgba(26, 24, 24, 0.4)
+}
+.messagearea button{
+    width: 30%;
+    margin-top: 2rem;
+    align-self: center;
+    height: 3.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+.messagearea button:hover{
+    background-color: #0088dd;
+}
+.messagearea input{
+    height: 4rem;
+    font-size: 2rem;
+    border: none;
+    background: #f0f1f8;
+    border-radius: 5px;
+
+}
+/*booking*/
+
+.mybookh h3{
+    text-transform: capitalize;
+    text-align: center;
+    color: #173a50;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.book_header h1{
+    text-transform: capitalize;
+    text-align: center;
+    color: #0088dd;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.combo{
+    display: flex;
+}
+.combo_options{
+    flex-grow: 0.9;
+    flex-basis: 30;
+    border: none;
+    background: #f0f1f8;
+    height: 3rem;
+    width: 1.5rem;
+    border-radius: 5px;
+}
+.combo_options option{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.combo_options,.combo_input, .combo_date:hover{
+    cursor: pointer;
+    color: #0088dd;
+    transition: all 0.3s ease;
+}
+.combo_date{
+    flex-grow: 0.1;
+    flex-basis: 30;
+    border: none;
+    background: #f0f1f8;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 5px;
+}
+.bookbtn{
+    flex-grow: 1;
+    flex-basis: 100;
+    display: flex;
+}
+.bookbtn h3{
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.combo_options, .combo_date, .bookbtn{
+    margin: 3rem;
+}
+.combo_input{
+    border: none;
+    background: #f0f1f8;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 5px;
+}
+.bookbtn button{
+    border: none;
+    height: 3rem;
+    width: 8rem;
+    background: #f0f1f8;
+    color: #0088dd;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.bookbtn button:hover{
+    background: #0088dd;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.table{
+    padding-top: 3rem;
+    width: 90rem;
+    background: #1f1f1f;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    border-collapse:collapse;
+    border-spacing: 0;
+    overflow: hidden;
+    box-shadow: 0 12px 5px rgba(26, 24, 24, 0.4);
+}
+th,td{
+    padding: 1rem 1.5rem;
+}
+tbody{
+    background: #4a4b4b;
+    border-radius: 5xp;
+    border: none;
+}
+.head th{
+    font-size: 1.5rem;
+    color: #f0f1f8;
+}
+tbody td{
+    font-size: 1.8rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.errormsgbook{
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+}
+.btn_delete {
+    text-decoration: none;
+    background: #1f1f1f;
+    border-radius: 4px;
+    color: #f0f1f8;
+    padding: 0.2rem;
+}
+.btn_edit{
+    text-decoration: none;
+    background: #1f1f1f;
+    border-radius: 4px;
+    color: #f0f1f8;
+    padding: 0.2rem;
+
+}
+.btn_delete:hover{
+    background: #ff0038;
+    color: #0fffff;
+    transition: all 0.5s ease;
+}
+.btn_edit:hover{
+    background: #0088dd;
+    transition: all 0.3s ease;
+}
+
+/*reviews*/
+
+.review_top h1{
+    font-size: 5rem;
+    color: #0088dd;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+#rev{
+    display: flex;
+    padding:0 7rem;
+    
+}
+.aimg{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 5px solid #cfcfcf;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+.imgrevtext h3{
+    font-size: 2rem;
+    font-weight: 450;
+}
+.imgrevtext p{
+    font-size: 1.5rem;
+}
+.imgrevtext{
+    flex-grow: 1;
+    flex-basis: 150%;
+    background: #f0f1f8;
+}
+.aimgs{
+    flex-grow: 1;
+    flex-basis: 20%;
+    background: #f0f1f8;
+}
+.reviewmessagearea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reviewmessagearea textarea{
+    border: none;
+    background: #9ecde9;
+    resize: none;
+    width: 60rem;
+    height: 15rem;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.reviewmessagearea button{
+    width: 10rem;
+    height: 4rem;
+    margin: 3rem;
+    border: none;
+    background: #49c1a2;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.reviewmessagearea button:hover{
+    cursor: pointer;
+    background: #0088dd;
+}
+.reviewarea h3{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+/*Footer*/
+.book-wrapper{
+    min-height: 100vh;
+}
+footer{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#045f73;
+}
+.fcontainer{
+    display: flex;
+    padding: 1rem;
+
+}
+.links{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.views{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.views h3{
+    text-align: center;
+    color: #fff;
+}
+.social{
+    flex-grow: 1;
+    flex-basis: 100%;
+    color: white;
+    text-align: center;
+}
+.social a{
+    color: white;
+    text-decoration: none;
+}
+.fcontainer h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.links{
+    color: white;
+}
+.links a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.links h3,
+.links a{
+text-align: center;
+}
+.links a:hover{
+    color: #042962;
+    transition: 1s;
+}
+.icons a{
+    color: whitesmoke;
+    padding: 2rem;
+    cursor: pointer;
+}
+.icons a:hover{
+    color: #042962;
+}
+.copy h3{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 50;
+}
+.views#count h3{
+    font-size: 6rem;
+}
+/*media querries*/
+
+/*navigation*/
+@media(max-width: 1024px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width: 769px){
+    .gw-header{
+        width: 100%;
+    }
+    html{
+        font-size: 42%;
+    }
+    .contactcontainer{
+        flex-direction: column;
+    }
+    
+}
+@media(max-width: 820px){
+    /*reviews*/
+    .imgrevtext{
+        padding: 0 3rem;
+    }
+    .reviewmessagearea button{
+        height: 6rem;
+        width: 12rem;
+        font-size: 3rem;
+    }
+    /*contact*/
+    .contactcontainer{
+        flex-direction: column;
+    }
+    .messagearea input{
+        font-size: 3rem;
+        height: 6rem;
+    }
+    .messagearea button{
+        height: 6rem;
+        font-size: 3rem;
+    }
+    .messagearea textarea{
+        height: 28rem;
+        font-size: 3rem;
+    }
+    .firstpage{
+        height: 25rem;
+    }
+
+}
+@media(max-width: 912px){
+    .firstpage{
+        height: 25rem;
+    }
+}
+@media(max-width: 290px){
+    .firstpage p{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 560px){
+    /*contact*/
+    .contactcontainer{
+        margin-bottom: 2rem;
+    }
+    /*reviews*/
+    .aimg{
+        width: 12rem;
+        height: 12rem;
+    }
+    .imgrevtext h3{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .imgrevtext p{
+        font-size: 2rem;
+    }
+    .imgrevtext{
+        padding: 0 3rem;
+    }
+    .reviewmessagearea{
+        padding: 0 2rem;
+    }
+    .reviewmessagearea textarea{
+        width: 100%;
+        padding: 0 3rem;
+        font-size: 2rem;
+    }
+    .reviewmessagearea button{
+        width: 10rem;
+        height: 5rem;
+    }
+    /*information*/
+    .pagescontainer{
+        flex-direction: column;
+    }
+    .firstpage{
+        height: 25rem;
+    }
+     /*attractions*/
+#attr{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+.alb{
+    width: 100%;
+    height: 100%;
+}
+#localtitle{
+    font-size: 3rem;
+}
+    html{
+        font-size: 42%;
+    }
+    .slideshow{
+        padding-left: 0.5rem;
+        height: 40rem;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+      }
+    .gw-cont{
+        display: block;
+        padding: 1rem;
+    }
+    .gw-nav{
+        position: fixed;
+        inset: 0;
+        background-color:#042962;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        transform: translatex(100%);
+        transition: all 0.7s ease;
+    }
+    .nav-toggle{
+        font-size: 3rem;
+        color: whitesmoke;
+        z-index: 10;
+        position: absolute;
+        right: 10vw;
+        top: 2rem;
+        display: inline-block;
+    }
+    .gw-logo{
+        z-index: 10;
+        position: relative;
+    }
+    .gw-nav[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .fcontainer{
+        flex-direction: column;
+    }
+    .links,
+    .views,
+    .social{
+        padding-bottom: 2rem;
+    }
+    .content-top{
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .submain{
+        flex-direction: column;
+    }
+    .right h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .topleft h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .search-bar{
+        padding-left: 20%;
+    }
+    .search-bar input{
+        flex-grow: 0.5;
+    }
+    .attcont{
+        flex-direction: column;
+    }
+    .card {
+        
+        width: 100%;
+        height: 60rem;
+      }
+      .card h3{
+        font-size: 3rem;
+      }
+      .card p{
+        font-size: 2rem;
+      }
+      .img-container{
+        width: 100%;
+        background: #0088dd;
+      }
+      .card .alb{
+        width: 100%;
+      }
+      /*booking*/
+
+      .table{
+        width: 100%;
+      }
+      .table th{
+        font-size: 0.rem;
+      }
+      .combo{
+        flex-direction: column;
+      }
+      .combo_options{
+        flex-basis: 100%;
+        width: 90%;
+      }
+      .mybooking form{
+        word-wrap: break-word;
+      }
+
+      /*pich and availablity*/
+      #pitches
+      {
+        flex-direction: column;
+      }
+}
